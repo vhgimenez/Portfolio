@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import { Container } from "./styles";
 import { Button } from "../components/button/index";
+import path from 'path-browserify'
 import MyLogo from "../../assets/logo.png";
 import Seta from "../../assets/seta.gif";
 import Codigo from "../../assets/codigo.jpeg";
@@ -8,14 +9,14 @@ import Barras from "../../assets/barras2.png";
 import Boneco from "../../assets/boneco.png";
 import Projetos from "../../assets/projetos.png";
 import Tecnologia from "../../assets/tecnologia.png";
-import logohtml from "../../assets/logohtml.png";
-import logocss from "../../assets/logocss.png";
-import logojs from "../../assets/logojs.png";
-import logonode from "../../assets/logonode.png";
-import logoreact from "../../assets/logoreact.png";
-import logopython from "../../assets/logopython.png";
-import logojava from "../../assets/logojava.png";
-import logophp from "../../assets/logophp.png";
+import html from "../../assets/logohtml.png";
+import css from "../../assets/logocss.png";
+import js from "../../assets/logojs.png";
+import node from "../../assets/logonode.png";
+import react from "../../assets/logoreact.png";
+import python from "../../assets/logopython.png";
+import java from "../../assets/logojava.png";
+import php from "../../assets/logophp.png";
 import Projeto1 from "../../assets/projeto1.png";
 import Construcao from "../../assets/construcao.png";
 import LogoEmail from "../../assets/logoemail.png";
@@ -101,7 +102,24 @@ export function Page() {
 
             function handleImageSelected(technology) {
                 const idTechnology = technology.attributes.id.value;
-                imageTechnology.src = `../../assets/logo${idTechnology}.png`;
+                //imageTechnology.src = `/assets/logo${idTechnology}.png`;
+
+                const imagensTec = {
+                  "node": node,
+                  "js": js,
+                  "html": html,
+                  "css": css,
+                  "python": python,
+                  "react": react,
+                  "php": php,
+                  "java": java
+                }
+                imageTechnology.src = imagensTec[idTechnology];
+                
+                
+
+
+
             }
           
             function handleDescription(technology) {
@@ -187,28 +205,28 @@ export function Page() {
           <div className="FirstSelection">
             <ul>
             <li className="Technology selected" id="html" data-description="HTML5 é a quinta e última versão do HTML, sigla de Hypertext Markup Language, uma das primeiras e principais linguagens de marcação da web. O HTML serve, basicamente, para o desenvolvimento de páginas que contenham conteúdos simples, como textos, imagens, áudio, vídeos e etc.">
-            <img src={logohtml}></img></li>
+            <img src={html}></img></li>
             <li className="Technology" id="css" data-description="Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.">
-            <img src={logocss}></img></li>
+            <img src={css}></img></li>
             <li className="Technology" id="js" data-description="JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.">
-            <img src={logojs}></img></li>
+            <img src={js}></img></li>
             <li className="Technology" id="node" data-description="Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos.">
-            <img src={logonode}></img></li></ul>
+            <img src={node}></img></li></ul>
           </div>
           <div className="SecondSelection">
           <ul>
           <li className="Technology" id="react" data-description="React é um framework JavaScript criado pelo Facebook (atual Meta) que é usado para criar interfaces de usuário (UI) em aplicativos web. Ele é popular por ser fácil de usar, altamente flexível e escalável, e é usado por muitas empresas de tecnologia, incluindo o Facebook, Instagram e Airbnb.">
-          <img src={logoreact}></img></li>
+          <img src={react}></img></li>
           <li className="Technology" id="python" data-description="Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.">
-          <img src={logopython}></img></li>
+          <img src={python}></img></li>
           <li className="Technology" id="java" data-description="Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.">
-          <img src={logojava}></img></li>
+          <img src={java}></img></li>
           <li className="Technology" id="php" data-description="PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. ">
-          <img src={logophp}></img></li></ul>
+          <img src={php}></img></li></ul>
           </div>
         </div>
         <div className="SelectedTechnology">
-        <img src={logohtml} className="ImageSelected"></img><hr/>
+        <img src={html} className="ImageSelected"></img><hr/>
         <p className="TechnologyDescription">HTML5 é a quinta e última versão do HTML, sigla de Hypertext Markup Language, uma das primeiras
            e principais linguagens de marcação da web. O HTML serve, basicamente, para o desenvolvimento de 
            páginas que contenham conteúdos simples, como textos, imagens, áudio, vídeos e etc.</p>

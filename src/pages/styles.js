@@ -662,7 +662,7 @@ footer .Networks img,
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     header {
         padding: .5rem 1rem;
     }
@@ -865,4 +865,5 @@ footer .Networks img,
         width: 1.5rem;
         height: 1.5rem;
     }
+}
 `;
