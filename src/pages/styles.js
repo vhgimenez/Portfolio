@@ -769,19 +769,18 @@ footer .Networks img,
     }
 
     .SelectedTechnology {
-        align-items: center;
-        text-align: center;
+        width: 100%;
     }
 
     .SelectedTechnology img {
-        width: 5.7rem;
-        height: 5.7rem;
+        width: 6.5rem;
+        height: 6.5rem;
     }
 
     .SelectedTechnology p {
         margin: 0 auto;
-        width: 22rem;
-        font-size: .9rem;
+        width: 25rem;
+        font-size: 1rem;
     }
 
     .card-wrapper {
