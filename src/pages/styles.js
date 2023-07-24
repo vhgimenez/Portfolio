@@ -769,14 +769,14 @@ footer .Networks img,
     }
 
     .SelectedTechnology img {
-        width: 7rem;
-        height: 7rem;
+        width: 5.7rem;
+        height: 5.7rem;
     }
 
     .SelectedTechnology p {
         margin: 0 auto;
-        width: 25rem;
-        font-size: 1rem;
+        width: 22rem;
+        font-size: .9rem;
     }
 
     .card-wrapper {
