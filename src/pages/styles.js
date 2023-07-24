@@ -768,6 +768,11 @@ footer .Networks img,
         height: 4rem;
     }
 
+    .SelectedTechnology {
+        align-items: center;
+        text-align: center;
+    }
+
     .SelectedTechnology img {
         width: 5.7rem;
         height: 5.7rem;
