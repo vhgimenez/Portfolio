@@ -853,13 +853,13 @@ footer .Networks img,
     }
 
     .AdditionalData .UpMobile img {
-        margin-top: -1.5rem;
+        margin-top: -1.9rem;
         opacity: 1;
         visibility: visible;
         display: flex;
         background-color: #3533CD;
-        width: 1rem;
-        height: 1rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 50%;
         padding: .2rem;
     }
