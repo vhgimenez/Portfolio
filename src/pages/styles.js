@@ -557,7 +557,7 @@ footer .Networks img,
         width: 0;
     }
     to {
-        width: 13.3rem;
+        width: 12.2rem;
     }
 }
 
@@ -688,23 +688,22 @@ footer .Networks img,
 
     main {
         padding: 0 1rem;
-        gap: 1rem;
     }
 
     main .Infos h1 {
-        width: 19rem;
-        font-size: 2rem;
+        width: 16rem;
+        font-size: 1.8rem;
     }
 
     main .Infos h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         animation: blinkCursor 700ms steps(40) infinite normal,
         typingmobile 2.5s steps(40) 1s normal both;
     }
 
     main .ImageContent img {
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
         animation: positionmobile 4s linear infinite;
     }
 
