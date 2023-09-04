@@ -2,6 +2,8 @@
 # Portfólio
 
 Esse é meu primeiro portfólio, criado com React, muita dedicação e empenho. Estou muito empolgado para compartilhar com todos  esse projeto, que talvez seja o melhor projeto já feito por mim até o momento. Espero que gostem!
+
+Segue o link de acesso: https://portfolioo-xi-six.vercel.app
 ## Ferramentas Utilizadas
 
 - React
