@@ -18,6 +18,7 @@ import python from "../../assets/logopython.png";
 import java from "../../assets/logojava.png";
 import php from "../../assets/logophp.png";
 import Projeto1 from "../../assets/projeto1.png";
+import Projeto2 from "../../assets/projeto2.png";
 import Construcao from "../../assets/construcao.png";
 import LogoEmail from "../../assets/logoemail.png";
 import LogoLinkedin from "../../assets/logolinkedin.png";
@@ -260,14 +261,18 @@ export function Page() {
               <div className="image-content">
                 <span className="overlay"></span>
                 <div className="card-image">
-                  <img src={Construcao} className="card-img"></img>
+                  <a href="https://weather-api-nu-peach.vercel.app/" target="_blank"><img src={Projeto2} className="card-img"></img></a>
                 </div>
               </div>
               <div className="card-content">
-                <h2 className="name">Em Construção</h2>
-                <p className="description">Ainda estou desenvolvendo outros tipos de projeto, enquanto eles não ficam prontos
-                 você pode visitar alguns que já tenho aqui ou acessar meu github!</p>
-                 <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
+                <h2 className="name">Weather API</h2>
+                <p className="description">O projeto WeatherAPI é uma aplicação web que utiliza a API de previsão do tempo 
+                para fornecer informações meteorológicas precisas e em tempo real para qualquer localização do mundo
+                </p>
+                <div className="buttons-card">
+                <a href="https://weather-api-nu-peach.vercel.app/" target="_blank"><Button title="Acessar"></Button></a>
+                  <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
+                </div>
               </div>
             </div>
             <div className="card">
