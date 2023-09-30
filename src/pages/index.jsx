@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import { Container } from "./styles";
 import { Button } from "../components/button/index";
 import path from 'path-browserify'
+import { Slider } from "../components/Slider";
 import MyLogo from "../../assets/logo.png";
 import Seta from "../../assets/seta.gif";
 import Codigo from "../../assets/codigo.jpeg";
@@ -17,9 +18,7 @@ import react from "../../assets/logoreact.png";
 import python from "../../assets/logopython.png";
 import java from "../../assets/logojava.png";
 import php from "../../assets/logophp.png";
-import Projeto1 from "../../assets/projeto1.png";
-import Projeto2 from "../../assets/projeto2.png";
-import Construcao from "../../assets/construcao.png";
+import Deslizar from "../../assets/deslizar.png";
 import LogoEmail from "../../assets/logoemail.png";
 import LogoLinkedin from "../../assets/logolinkedin.png";
 import LogoGitHub from "../../assets/logogithub.png";
@@ -239,104 +238,13 @@ export function Page() {
         <h1>PROJETOS</h1>
       </div>
       <div className="ProjectsArea">
-      <div className="slide-container">
-        <div className="slide-content">
-          <div className="card-wrapper">
-            <div className="card">
-              <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                  <a href="https://landing-page-figma-sepia.vercel.app/" target="_blank"><img src={Projeto1} className="card-img"></img></a>
-                </div>
-              </div>
-              <div className="card-content">
-                <h2 className="name">Projeto com Figma</h2>
-                <p className="description">Este projeto é uma implementação de um design criado no Figma usando HTML e CSS. 
-                A partir do design criado no Figma, o projeto é desenvolvido utilizando-se HTML para a estrutura do 
-                documento e CSS para a estilização e layout.</p>
-                <div className="buttons-card"><a href="https://landing-page-figma-sepia.vercel.app/" target="_blank"><Button title="Acessar"></Button></a><a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a></div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                  <a href="https://weather-api-nu-peach.vercel.app/" target="_blank"><img src={Projeto2} className="card-img"></img></a>
-                </div>
-              </div>
-              <div className="card-content">
-                <h2 className="name">Weather API</h2>
-                <p className="description">O projeto WeatherAPI é uma aplicação web que utiliza a API de previsão do tempo 
-                para fornecer informações meteorológicas precisas e em tempo real para qualquer localização do mundo
-                </p>
-                <div className="buttons-card">
-                <a href="https://weather-api-nu-peach.vercel.app/" target="_blank"><Button title="Acessar"></Button></a>
-                  <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                  <img src={Construcao} className="card-img"></img>
-                </div>
-              </div>
-              <div className="card-content">
-                <h2 className="name">Em Construção</h2>
-                <p className="description">Ainda estou desenvolvendo outros tipos de projeto, enquanto eles não ficam prontos 
-                você pode visitar alguns que já tenho aqui ou acessar meu github!</p>
-                <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
-              </div>
-            </div>
-          </div>
-          <div className="card-wrapper" id="card-wrapper-two">
-            <div className="card nomobile">
-              <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                  <img src={Construcao} className="card-img"></img>
-                </div>
-              </div>
-              <div className="card-content">
-                <h2 className="name">Em Construção</h2>
-                <p className="description">Ainda estou desenvolvendo outros tipos de projeto, enquanto eles não ficam prontos 
-                você pode visitar alguns que já tenho aqui ou acessar meu github!</p>
-                <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
-              </div>
-            </div>
-            <div className="card nomobile">
-              <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                  <img src={Construcao} className="card-img"></img>
-                </div>
-              </div>
-              <div className="card-content">
-                <h2 className="name">Em Construção</h2>
-                <p className="description">Ainda estou desenvolvendo outros tipos de projeto, enquanto eles não ficam prontos 
-                você pode visitar alguns que já tenho aqui ou acessar meu github!</p>
-                <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
-              </div>
-            </div>
-            <div className="card nomobile">
-              <div className="image-content">
-                <span className="overlay"></span>
-                <div className="card-image">
-                  <img src={Construcao} className="card-img"></img>
-                </div>
-              </div>
-              <div className="card-content">
-                <h2 className="name">Em Construção</h2>
-                <p className="description">Ainda estou desenvolvendo outros tipos de projeto, enquanto eles não ficam prontos 
-                você pode visitar alguns que já tenho aqui ou acessar meu github!</p>
-                <a href="https://github.com/vhgimenez" target="_blank"><Button title="GitHub"></Button></a>
-              </div>
-            </div>
-          </div>
+        <div className="Tip">
+          <p>Deslize para navegar</p>
+          <img src={Deslizar}></img>
         </div>
+        <Slider></Slider>
       </div>
-    </div></div>
+    </div>
     <footer>
       <div className="Up">
         <a href="#"><img src={SetaCima}></img></a>

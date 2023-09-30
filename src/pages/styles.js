@@ -279,6 +279,7 @@ main Button img {
 }
 
 ul {
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -347,118 +348,21 @@ ul {
     transition: opacity 3s;
 }
 
-.slide-container {
-    max-width: 112rem;
-    width: 100%;
-}
-
-.slide-content {
+.Tip {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: .5rem;
 }
 
-.card-wrapper {
-    display: flex;
-    gap: 5rem;
-}
-
-.card {
-    width: 21rem;
-    height: 29rem;
-    border-radius: 2.5rem;
-    background-color: white;
-}
-
-.image-content,
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 1.4rem;
-}
-
-.image-content {
-    position: relative;
-    row-gap: .5rem;
-    padding: 1rem 1.4rem;
-}
-
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #3533CD;
-    border-radius: 2.5rem 2.5rem 0 2.5rem;
-}
-
-.overlay::before,
-.overlay::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -4rem;
-    height: 4rem;
-    width: 4rem;
-    background-color: #3533CD;
-}
-
-.overlay::after {
-    border-radius: 0 2.5rem 0 0;
-    background-color: white;
-}
-
-.card-image {
-    position: relative;
-    height: 12rem;
-    width: 18rem;
-    border-radius: 1.5rem;
-    background: white;
-    padding: .3rem;
-}
-
-.card-image .card-img {
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1.5rem;
-    border: .4rem solid #3533CD;
-    transition: transform .3s;
-}
-
-.card-image .card-img:hover {
-    transform: scale(1.1);
-}
-
-.name {
+.Tip p {
     font-family: "Raleway";
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #333;
+    font-size: 1rem;
+    color: white;
 }
 
-.description {
-    margin-top: .9rem;
-    font-family: "Raleway";
-    font-size: .9rem;
-    font-weight: 300;
-    color: #707070;
-}
-
-.slide-container Button {
-    margin: 1.4rem
-}
-
-#card-wrapper-two {
-    margin-top: 3rem;
-}
-
-.buttons-card {
-    display: flex;
+.Tip img {
+    width: 1.2rem;
 }
 
 footer {
