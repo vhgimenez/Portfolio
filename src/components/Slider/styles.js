@@ -4,7 +4,7 @@ export const Container = styled.div`
 
     font-family: "Raleway";
     width: 100%;
-    max-width: 50rem;
+    max-width: 55%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
@@ -65,6 +65,42 @@ export const Container = styled.div`
     .carousel {
         cursor: grab;
         overflow: hidden;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        padding: 0 1rem;
+        max-width: 100%;
+
+        .inner {
+            gap: 1.5rem;
+        }
+
+        .item {
+            min-width: 15rem;
+        }
+
+        .item img {
+            height: 9rem;
+        }
+
+        h2 {
+            margin-top: .7rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+
+        .buttons Button {
+            color: white;
+        }
+
+        .btnProject {
+            gap: 1.5rem;
+        }
+
     }
 
 `;
