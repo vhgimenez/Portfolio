@@ -184,6 +184,7 @@ main Button img {
     align-items: center;
     text-align: center;
     width: 100%;
+    transition: all .3s;
 }
 
 .TitleDivAboutMe h1,
@@ -199,7 +200,7 @@ main Button img {
 
 #Description {
     opacity: 0;
-    transition: opacity 3s;
+    transition: all 3s;
 }
 
 #Description p {
@@ -243,6 +244,7 @@ main Button img {
     width: 100%;
     align-items: center;
     text-align: center;
+    transition: all .3s;
 }
 
 .SelectionTechnology {
@@ -341,6 +343,7 @@ ul {
     width: 100%;
     align-items: center;
     text-align: center;
+    transition: all 1s;
 }
 
 .ProjectsArea {
