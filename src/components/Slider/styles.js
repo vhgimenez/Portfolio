@@ -49,6 +49,7 @@ export const Container = styled.div`
 
     .buttons {
         text-align: center;
+        margin-top: .5rem;
     }
 
     .buttons Button {
@@ -56,7 +57,6 @@ export const Container = styled.div`
     }
 
     .btnProject {
-        margin-top: .5rem;
         display: flex;
         justify-content: center;
         gap: 2rem;

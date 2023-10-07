@@ -9,7 +9,7 @@ import image3 from "../../../assets/construcao.png";
 
 const images = [image1, image2, image3, image3, image3, image3];
 const titles = ["Projeto com Figma", "Weather API", "Em Construção", "Em Construção", "Em Construção", "Em Construção"];
-const subtitle = ["HTML - CSS", "Javascript"];
+const subtitle = ["HTML - CSS", "Javascript", "Em Breve", "Em Breve", "Em Breve", "Em Breve"];
 const buttonAcess = ["Acessar", "Acessar"];
 const linksAcess = ["https://landing-page-figma-sepia.vercel.app/", "https://weather-api-nu-peach.vercel.app/"];
 const linkGitHub = ["https://github.com/vhgimenez"];
