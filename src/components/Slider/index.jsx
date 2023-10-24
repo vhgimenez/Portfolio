@@ -5,13 +5,14 @@ import { motion } from 'framer-motion';
 
 import image1 from "../../../assets/projeto1.png";
 import image2 from "../../../assets/projeto2.png";
-import image3 from "../../../assets/construcao.png";
+import image3 from "../../../assets/projeto3.png";
+import image4 from "../../../assets/construcao.png";
 
-const images = [image1, image2, image3, image3, image3, image3];
-const titles = ["Projeto com Figma", "Weather API", "Em Construção", "Em Construção", "Em Construção", "Em Construção"];
-const subtitle = ["HTML - CSS", "Javascript", "Em Breve", "Em Breve", "Em Breve", "Em Breve"];
-const buttonAcess = ["Acessar", "Acessar"];
-const linksAcess = ["https://landing-page-figma-sepia.vercel.app/", "https://weather-api-nu-peach.vercel.app/"];
+const images = [image1, image2, image3, image4, image4, image4];
+const titles = ["Projeto com Figma", "Hacktudo OLX", "Weather API", "Em Construção", "Em Construção", "Em Construção"];
+const subtitle = ["HTML - CSS", "React - Node.js", "Javascript", "Em Breve", "Em Breve", "Em Breve"];
+const buttonAcess = ["Acessar", "Acessar", "Acessar"];
+const linksAcess = ["https://landing-page-figma-sepia.vercel.app/", "https://hack-tudo.vercel.app/", "https://weather-api-nu-peach.vercel.app/"];
 const linkGitHub = ["https://github.com/vhgimenez"];
 
 export function Slider() {
