@@ -16,7 +16,7 @@ import js from "../../assets/logojs.png";
 import node from "../../assets/logonode.png";
 import react from "../../assets/logoreact.png";
 import python from "../../assets/logopython.png";
-import java from "../../assets/logojava.png";
+import c from "../../assets/logoc.png";
 import php from "../../assets/logophp.png";
 import Deslizar from "../../assets/deslizar.png";
 import LogoEmail from "../../assets/logoemail.png";
@@ -112,7 +112,7 @@ export function Page() {
                   "python": python,
                   "react": react,
                   "php": php,
-                  "java": java
+                  "c": c
                 }
                 imageTechnology.src = imagensTec[idTechnology];
                 
@@ -219,8 +219,8 @@ export function Page() {
           <img src={react}></img></li>
           <li className="Technology" id="python" data-description="Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.">
           <img src={python}></img></li>
-          <li className="Technology" id="java" data-description="Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.">
-          <img src={java}></img></li>
+          <li className="Technology" id="c" data-description="C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET. A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras linguagens de programação, como Object Pascal e, principalmente, Java.">
+          <img src={c}></img></li>
           <li className="Technology" id="php" data-description="PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. ">
           <img src={php}></img></li></ul>
           </div>
