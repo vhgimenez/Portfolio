@@ -4,6 +4,7 @@ import { Button } from "../components/button/index";
 import path from 'path-browserify'
 import { Slider } from "../components/Slider";
 import MyLogo from "../../assets/logo.png";
+import MyIcon from "../../assets/meuicon.png";
 import Seta from "../../assets/seta.gif";
 import Codigo from "../../assets/codigo.jpeg";
 import Barras from "../../assets/barras2.png";
@@ -29,6 +30,7 @@ import SetaCima2 from "../../assets/setacima2.gif";
 
 export function Page() {
     const [mounted,setMounted] = useState(false)
+    const [activeSection, setActiveSection] = useState(""); // Estado para controlar a seção ativa
     
     
     useEffect(() => {
@@ -59,7 +61,6 @@ export function Page() {
                 }, 500);
               }
             })
-
             
             function handleIntersection(entries, observer) {
               entries.forEach(entry => {
@@ -97,7 +98,7 @@ export function Page() {
                         technology.classList.remove("selected");
                     }
                 });
-          
+        
             }
 
             function handleImageSelected(technology) {
@@ -126,6 +127,31 @@ export function Page() {
                 const technologyDescription = document.querySelector(".TechnologyDescription");
                 technologyDescription.innerText = technology.getAttribute("data-description");
             }
+
+            const handleScroll = () => {
+              const sections = document.querySelectorAll("div[id]");
+              let currentSection = "";
+        
+              sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const offset = window.innerHeight * 0.4; // Ajuste de margem de 40% da altura da viewport
+        
+                if (rect.top <= offset && rect.bottom >= offset) {
+                  currentSection = section.id;
+                }
+              });
+        
+              setActiveSection(currentSection);
+            };
+        
+            // Registra o evento de rolagem
+            window.addEventListener("scroll", handleScroll);
+        
+            // Remove o evento de rolagem ao desmontar o componente
+            return () => {
+              window.removeEventListener("scroll", handleScroll);
+            };
+
         }
 
         else{
@@ -142,10 +168,10 @@ export function Page() {
       <a href="#"><img src={MyLogo}></img></a>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#AboutMe">Sobre</a></li>
-          <li><a href="#Skills">Habilidades</a></li>
-          <li><a href="#Projects">Projetos</a></li>
+          <li><a href="#" className={activeSection === "Home" ? "active" : ""}>Home</a></li>
+          <li><a href="#AboutMe" className={activeSection === "AboutMe" ? "active" : ""}>Sobre</a></li>
+          <li><a href="#Skills" className={activeSection === "Skills" ? "active" : ""}>Habilidades</a></li>
+          <li><a href="#Projects" className={activeSection === "Projects" ? "active" : ""}>Projetos</a></li>
         </ul>
         <a href="https://wa.me/message/ADVPLDIFI2AUB1" target="_blank"><Button title="Contato" /></a>
         <div className="Bars">
@@ -168,7 +194,7 @@ export function Page() {
         <a href="#AboutMe"><button>Sobre Mim <img src={Seta}></img></button></a>
       </div>
       <div className="ImageContent">
-        <img src={Codigo}></img>
+        <img src={MyIcon}></img>
       </div>
     </main>
     <div id="AboutMe">

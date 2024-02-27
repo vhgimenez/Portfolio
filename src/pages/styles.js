@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     
+.active {
+    color: #3533CD;
+}
+
 header {
     width: 100%;
     padding: .5rem 7rem;
@@ -154,7 +158,7 @@ main button {
     gap: .3rem;
     background-color: #3533CD;
     color: white;
-    border-radius: 1rem;
+    border-radius: 0 0 0 1rem;
     width: 8rem;
     padding: .5rem;
     border: none;
