@@ -205,7 +205,7 @@ export function Page() {
         <div className="Presentation">
           <img src={Boneco}></img>
           <p>Prazer, me chamo Victor Gimenez, tenho 20 anos e sou um entusiasta de Tecnologia da Informação, formado em Informática pela Escola e Faculdade Fortec 
-            e estudo Ciência da Computação na Universidade Paulista, atualmente estou no 5º semestre da faculdade.</p>
+            e estudo Ciência da Computação na Universidade Paulista, atualmente estou no 7º semestre da faculdade.</p>
         </div>
         <div className="Experience">
           <p>Participei de projetos acadêmicos que me permitiram aplicar meus conhecimentos teóricos em situações reais, 
