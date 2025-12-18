@@ -16,8 +16,10 @@ import css from "../../assets/logocss.png";
 import js from "../../assets/logojs.png";
 import node from "../../assets/logonode.png";
 import react from "../../assets/logoreact.png";
+import java from "../../assets/logojava.png";
 import python from "../../assets/logopython.png";
 import c from "../../assets/logoc.png";
+import spring from "../../assets/logospring.png";
 import php from "../../assets/logophp.png";
 import Deslizar from "../../assets/deslizar.png";
 import LogoEmail from "../../assets/logoemail.png";
@@ -110,9 +112,9 @@ export function Page() {
                   "js": js,
                   "html": html,
                   "css": css,
-                  "python": python,
+                  "java": java,
                   "react": react,
-                  "php": php,
+                  "spring": spring,
                   "c": c
                 }
                 imageTechnology.src = imagensTec[idTechnology];
@@ -204,8 +206,8 @@ export function Page() {
       <div id="Description">
         <div className="Presentation">
           <img src={Boneco}></img>
-          <p>Prazer, me chamo Victor Gimenez, tenho 20 anos e sou um entusiasta de Tecnologia da Informação, formado em Informática pela Escola e Faculdade Fortec 
-            e estudo Ciência da Computação na Universidade Paulista, atualmente estou no 7º semestre da faculdade.</p>
+          <p>Olá, me chamo Victor Gimenez, tenho 21 anos e sou Desenvolvedor WEB, formado em Técnico de Informática pela Escola e Faculdade Fortec 
+            e bacharelado em Ciência da Computação pela Universidade Paulista.</p>
         </div>
         <div className="Experience">
           <p>Participei de projetos acadêmicos que me permitiram aplicar meus conhecimentos teóricos em situações reais, 
@@ -243,12 +245,12 @@ export function Page() {
           <ul>
           <li className="Technology" id="react" data-description="React é um framework JavaScript criado pelo Facebook (atual Meta) que é usado para criar interfaces de usuário (UI) em aplicativos web. Ele é popular por ser fácil de usar, altamente flexível e escalável, e é usado por muitas empresas de tecnologia, incluindo o Facebook, Instagram e Airbnb.">
           <img src={react}></img></li>
-          <li className="Technology" id="python" data-description="Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.">
-          <img src={python}></img></li>
+          <li className="Technology" id="java" data-description="Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.">
+          <img src={java}></img></li>
           <li className="Technology" id="c" data-description="C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET. A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras linguagens de programação, como Object Pascal e, principalmente, Java.">
           <img src={c}></img></li>
-          <li className="Technology" id="php" data-description="PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. ">
-          <img src={php}></img></li></ul>
+          <li className="Technology" id="spring" data-description="O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro 'Expert One-on-One: JEE Design e Development'. Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle e injeção de dependência.">
+          <img src={spring}></img></li></ul>
           </div>
         </div>
         <div className="SelectedTechnology">
