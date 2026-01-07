@@ -207,7 +207,7 @@ export function Page() {
         <div className="Presentation">
           <img src={Boneco}></img>
           <p>Olá, me chamo Victor Gimenez, tenho 21 anos e sou Desenvolvedor WEB, formado em Técnico de Informática pela Escola e Faculdade Fortec 
-            e bacharelado em Ciência da Computação pela Universidade Paulista.</p>
+            e bacharelado em Ciência da Computação pela Universidade Paulista</p>
         </div>
         <div className="Experience">
           <p>Participei de projetos acadêmicos que me permitiram aplicar meus conhecimentos teóricos em situações reais, 
